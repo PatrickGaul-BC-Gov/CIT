@@ -140,17 +140,12 @@ export default function EDODashboard() {
     );
   } else {
     dataSection = (
-<<<<<<< HEAD
       <div className="edo-dashboard">
         <h1 className="dashboard-header">
-          {`Your Promoted Opportunities${
+          {`Your Investment Opportunities${
             communities ? ` in ${communities}` : ""
           }`}
         </h1>
-=======
-      <>
-        <h1 className="dashboard-header">Your Investment Opportunities</h1>
->>>>>>> bede8166b0e5c8deb70943c2b8da9b233d64500c
         <OpportunityTable
           tableData={tableData}
           handleModalOpen={handleModalOpen}
