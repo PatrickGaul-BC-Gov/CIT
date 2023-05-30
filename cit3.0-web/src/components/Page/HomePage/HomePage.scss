@@ -1,3 +1,9 @@
+.bcgov-ciot-homepage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .header-div {
     height: 326px;
     position: relative;
@@ -118,6 +124,10 @@ ul.dashed > li:before {
     padding: 30px;
     opacity: 85%;
     font-size: 28pt;
+}
+
+.bcgov-ciot-homepage-top-row {
+    margin: auto;
 }
 
 .bcgov-homepage-header-text .sub-header-text {

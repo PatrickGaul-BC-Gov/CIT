@@ -10,14 +10,27 @@ export default function HomePage() {
   const keycloak = useKeycloakWrapper();
   const history = useHistory();
   return (
-    <>
-      <div className="w-100 header-div bcgov-homepage-header">
-        <img
-          height="280px" // keep this height
-          width="650px"
-          src="/images/CIOT_homepage-banner.png"
-          alt="Beautiful British Columbia"
-        />
+    <div className="bcgov-ciot-homepage">
+      <div className="bcgov-ciot-homepage-top-row">
+        <div className="w-100 header-div bcgov-homepage-header">
+          <img
+            height="280px" // keep this height
+            width="650px"
+            src="/images/CIOT_homepage-banner.png"
+            alt="Beautiful British Columbia"
+          />
+        </div>
+        <div className="header-text bcgov-homepage-header-text">
+          <div className="d-flex flex-column align-items-end">
+            <h1 className="main-header-text bcgov-homepage-header-text">
+              Community Investment Opportunities
+            </h1>
+            <h2 className="sub-header-text bcgov-homepage-sub-header-text">
+              Connecting investors with opportunities in communities across
+              British Columbia
+            </h2>
+          </div>
+        </div>
       </div>
       <div className="header-text bcgov-homepage-header-text">
         <div className="d-flex flex-column align-items-end">
@@ -140,6 +153,6 @@ export default function HomePage() {
           </Row>
         </Container>
       </div>
-    </>
+    </div>
   );
 }
